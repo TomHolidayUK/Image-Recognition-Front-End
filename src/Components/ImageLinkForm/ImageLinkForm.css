@@ -1,0 +1,15 @@
+
+
+.form {
+    width: 700px;
+    /* height: 100px; */
+    background: linear-gradient(89deg, #60A8A6 0%, #BCF5F3 100%)
+}
+
+.display-linebreak {
+    white-space: pre-line;
+  }
+
+.button-container {
+    padding: 0 20px;
+}
