@@ -72,15 +72,18 @@ const ImagePrediction = ({ imagePrediction }) => {
         <div id="container1" className='f4 pa2'>
             {(imagePrediction) && 
             <div className=''>
-                <p className='f3 b'>Image Prediction Results:</p>
-                The model predicts with <b>{((imagePrediction.allValues[0])*100).toFixed(2)}% </b> 
-                of accuracy that <b>"{imagePrediction.allPredictions[0]}"</b> is represented in the photo. 
-                The model further predicts that  
-                <b> "{imagePrediction.allPredictions[1]}"</b>, 
-                <b> "{imagePrediction.allPredictions[2]}"</b>, 
-                <b> "{imagePrediction.allPredictions[3]}"</b>, 
-                <b> "{imagePrediction.allPredictions[4]}"</b>, 
-                <b> "{imagePrediction.allPredictions[5]}"</b> are also are represented.
+                <div>
+                    <p className='f3 b'>Image Prediction Results:</p>
+                    The model predicts with <b>{((imagePrediction.allValues[0])*100).toFixed(2)}% </b> 
+                    of accuracy that <b>"{imagePrediction.allPredictions[0]}"</b> is represented in the photo. 
+                    The model further predicts that  
+                    <b> "{imagePrediction.allPredictions[1]}"</b>, 
+                    <b> "{imagePrediction.allPredictions[2]}"</b>, 
+                    <b> "{imagePrediction.allPredictions[3]}"</b>, 
+                    <b> "{imagePrediction.allPredictions[4]}"</b>, 
+                    <b> "{imagePrediction.allPredictions[5]}"</b> are also are represented.
+                </div>
+                <p>---</p>
                 <div id="container" className="bar-container">
                     <Bar className="bar" options={barOptions} data={barData}></Bar>
                 </div>
