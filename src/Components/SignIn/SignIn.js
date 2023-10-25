@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from "framer-motion";
+import './SignIn.css';
 
 class SignIn extends React.Component {
     constructor(props) {
@@ -54,6 +55,7 @@ class SignIn extends React.Component {
 
     render() {
         return (
+            <div className="flexbox">
             <article className="br3 ba dark-gray b--black-10 mv4 w-100 w-50-m w-25-l mw6 shadow-5 center">
                 <main className="pa4 black-80">
                     <div className="measure">
@@ -120,6 +122,8 @@ class SignIn extends React.Component {
                     </div>
                 </main>
             </article>
+            <p className="f3.5 fw4 ph0 mh0">Welcome to this Facial Recognition Website Developed by Tom Holiday. Sign in to your account to get going or if you don't already have one, register an account with us!</p>
+            </div>
         );
     }    
 }

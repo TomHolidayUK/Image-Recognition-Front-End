@@ -314,7 +314,6 @@ class App extends Component {
             ?
             <div className="signin">
               <SignIn loadUser={this.loadUser} onRouteChange={this.onRouteChange}/>
-              <p className="f3.5 fw4 ph0 mh0">Welcome to this Facial Recognition Website Developed by Tom Holiday. Sign in to your account to get going or if you don't already have one, register an account with us!</p>
             </div>
             : <div className="register">
                 <Register loadUser={this.loadUser} onRouteChange={this.onRouteChange} />
