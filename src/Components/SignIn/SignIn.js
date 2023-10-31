@@ -57,7 +57,7 @@ class SignIn extends React.Component {
         return (
             <div className="flexbox">
             <article className="br3 ba dark-gray b--black-10 mv4 w-100 w-50-m w-25-l mw6 shadow-5 center">
-                <main className="pa4 black-80">
+                <main className="ph4 pv2 black-80">
                     <div className="measure">
                         <fieldset id="sign_up" className="ba b--transparent ph0 mh0">
                             <legend className="f1 fw6 ph0 mh0">Sign In</legend>
@@ -122,7 +122,7 @@ class SignIn extends React.Component {
                     </div>
                 </main>
             </article>
-            <p className="f4 fw4 ph0 mh0">Welcome to this Facial Recognition Website Developed by Tom Holiday. Sign in to your account or if you don't have one, register with us!</p>
+            <p className="f4 fw5 ph0 mh0">Welcome to this Facial Recognition Website Developed by Tom Holiday. Sign in to your account or if you don't have one, register with us!</p>
             </div>
         );
     }    
