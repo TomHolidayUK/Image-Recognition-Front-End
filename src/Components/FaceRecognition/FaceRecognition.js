@@ -4,7 +4,7 @@ import './FaceRecognition.css';
 
 const FaceRecognition = ({ facesNumber, imageURL, box }) => {
     return (
-        <div class="">
+        <div className="">
             <div className='f3 fw4 ph0 pa2 mh0'>{facesNumber && <div className='b'>Facial Detection Results:</div>}</div>
             <div className='center na'>
                 <div className='relative nt2'>

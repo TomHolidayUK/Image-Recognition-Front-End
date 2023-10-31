@@ -290,7 +290,7 @@ class App extends Component {
     return (
       <div className="App">
         <ParticlesBg type="custom" config={ParticleConfig} bg={true} />
-        <Navigation isSignedIn={this.state.isSignedIn} onRouteChange={this.onRouteChange}/>
+        <Navigation className="navigation" isSignedIn={this.state.isSignedIn} onRouteChange={this.onRouteChange}/>
         {/* We want to only show SignIn until the user has signed in. Therefore the following ternary operator is used */}
         { this.state.route === 'home' 
           ? <div className='main'>

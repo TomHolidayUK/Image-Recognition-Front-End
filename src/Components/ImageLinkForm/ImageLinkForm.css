@@ -1,4 +1,12 @@
-
+.main2 {
+    /* border: 1px black; */
+    /* width: 100%; */
+    /* overflow-x: hidden; */
+    /* overflow: auto */
+    /* word-wrap: break-word */
+    /* white-space: nowrap */
+    overflow-wrap: break-word
+}
 
 .form {
     width: 700px;
@@ -8,8 +16,30 @@
 
 .display-linebreak {
     white-space: pre-line;
+    overflow-wrap: break-word
   }
 
 .button-container {
-    padding: 0 20px;
+    border: 1px black;
+    padding-bottom: 10px;;
+}
+
+.button-container2 {
+    padding-bottom: 5px;
+}
+
+.detect-button-container {
+    padding: 0 5px;
+    border: 5px black;
+    display: flex;
+    align-items: center;;
+}
+
+.detect-button-container2 {
+    padding: 0 5px;
+    border: 5px black;
+}
+
+.detect-button-container input {
+    padding: 5px;
 }

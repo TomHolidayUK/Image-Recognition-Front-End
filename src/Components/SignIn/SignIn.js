@@ -17,7 +17,7 @@ class SignIn extends React.Component {
     }
 
     onPasswordChange = (event) => {
-        console.log(this.state.signInPassword)
+        // console.log(this.state.signInPassword)
         this.setState({signInPassword: event.target.value})
     }
 
@@ -88,7 +88,7 @@ class SignIn extends React.Component {
                                         name="username"
                                         id="username"
                                         style={{ display: 'none' }} 
-                                        autocomplete="new-password"
+                                        autoComplete="new-password"
                                     />
                                     <input
                                         className="b pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100" 
@@ -97,7 +97,7 @@ class SignIn extends React.Component {
                                         id="password"
                                         onChange={this.onPasswordChange}
                                         onKeyDown={this.handleKeyPress}
-                                        autocomplete="new-password"
+                                        autoComplete="new-password"
                                     />
                                 </form>
                             </div>

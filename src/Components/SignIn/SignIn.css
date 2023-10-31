@@ -5,4 +5,13 @@
     /* border: 5px solid blue; */
     height: 90vh;
     align-items: center;
+    overflow-y: hidden;
 }
+
+/* @media (max-height: 650px) {
+    .flexbox {
+      overflow-y: hidden;
+    }
+  
+  }
+   */
