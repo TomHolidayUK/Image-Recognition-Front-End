@@ -122,7 +122,7 @@ class SignIn extends React.Component {
                     </div>
                 </main>
             </article>
-            <p className="f3.5 fw4 ph0 mh0">Welcome to this Facial Recognition Website Developed by Tom Holiday. Sign in to your account to get going or if you don't already have one, register an account with us!</p>
+            <p className="f4 fw4 ph0 mh0">Welcome to this Facial Recognition Website Developed by Tom Holiday. Sign in to your account or if you don't have one, register with us!</p>
             </div>
         );
     }    
