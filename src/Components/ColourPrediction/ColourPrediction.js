@@ -48,7 +48,7 @@ const ColourPrediction = ({ colour }) => {
     <div>
       <div key={1}>
         {colour.colourValues ? (
-          <div class="bt bb">
+          <div className="bt bb">
             <p className="f3 b">Colour Detection Results:</p>
             {print(resultDisplayArray)}
             <div id="container" className="pie-container">

@@ -21,7 +21,9 @@
 
 .button-container {
     border: 1px black;
-    padding-bottom: 10px;;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
 .button-container2 {
@@ -42,4 +44,13 @@
 
 .detect-button-container input {
     padding: 5px;
+}
+
+.button {
+    background: rgb(255, 115, 0);
+    height: 30px;
+    /* background: white; */
+    padding: 0 10px;
+    margin: 10px 10px 0 0;
+    border-radius: 8px;
 }

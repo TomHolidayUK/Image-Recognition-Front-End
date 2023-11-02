@@ -302,7 +302,7 @@ class App extends Component {
               onInputChange={this.onInputChange} 
               onButtonSubmit={this.onButtonSubmit}
             />
-            <div class="pa3">
+            <div className="pa3">
               <FaceRecognition className="pa3" facesNumber={this.state.facesNumber} box={this.state.box} imageURL={this.state.imageURL} />
               <ColourPrediction className="pa3" imagePrediction={this.state.imagePrediction} facesNumber={this.state.facesNumber} colour={this.state.colour}/>
               <ImagePrediction imagePrediction={this.state.imagePrediction}/>
