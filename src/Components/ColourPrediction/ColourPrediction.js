@@ -35,23 +35,29 @@ const ColourPrediction = ({ colour }) => {
 
   let resultDisplayArray = [];
   for (let i = 0; i < colour.numberOfColours; i++) {
-    resultDisplayArray[i] = `${(colour.colourValues[i] * 100).toFixed(2)}% of the photo is '${colour.colourNames[i]}'`;
+    resultDisplayArray[i] = {
+      key: i, 
+      text1: `${(colour.colourValues[i] * 100).toFixed(2)}%`,
+      text2: " of the photo is ",
+      text3: colour.colourNames[i]
+    };
   }
-
-  let print = (component) => {
-    return component.map((i) => <div className="">{i}</div>);
-  };
 
   const pieOptions = {};
 
   return (
-    <div>
+    <div >
       <div key={1}>
         {colour.colourValues ? (
           <div className="bt bb">
             <p className="f3 b">Colour Detection Results:</p>
-            {print(resultDisplayArray)}
-            <div id="container" className="pie-container">
+            {/* {print(resultDisplayArray.text)} */}
+            <div className="pb3">
+              {resultDisplayArray.map((item) => (
+                <div className="f4 pb1" key={item.key}><b>{item.text1}</b>{item.text2}<b>{item.text3}</b></div>
+              ))}
+            </div>
+            <div id="container" className="pie-container mb3">
               <Pie className="pie" data={pieData} options={pieOptions}></Pie>
             </div>
           </div>
